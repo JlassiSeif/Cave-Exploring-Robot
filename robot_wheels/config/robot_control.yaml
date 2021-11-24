@@ -1,0 +1,10 @@
+robot_wheels:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 20
+  joint_lidar_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: lidar_j
+    pid: {p: 0.2, i: 1, d: 0.50}
+
+    
